@@ -1,0 +1,5 @@
+Flask==0.9
+jinja2==2.6
+requests==1.0.3
+virtualenv==1.7.1.2
+werkzeug==0.8.3
