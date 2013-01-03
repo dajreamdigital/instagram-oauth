@@ -13,7 +13,7 @@ client = {
 
 @app.route('/')
 def root():
-	uri = 'https://api.instagram.com/oauth/authorize/?client_id=' + client['client_id'] + '&redirect_uri=' + client['redirect_uri'] + '&response_type=code'
+	uri = 'https://api.instagram.com/oauth/authorize/?client_id={0}&redirect_uri={1}&response_type=code'.format(client['client_id'], client['redirect_uri'])
 	return flask.redirect(uri)
 	
 @app.route('/auth')
